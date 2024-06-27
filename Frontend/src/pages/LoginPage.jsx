@@ -10,7 +10,7 @@ const LoginPage = () => {
 		username: "",
 		password: "",
 	});
-
+	console.log(loginData);
 	const [login, { loading }] = useMutation(LOGIN, {
 		refetchQueries: ["GetAuthenticatedUser"],
 	});
